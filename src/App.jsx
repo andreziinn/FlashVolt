@@ -1,0 +1,19 @@
+export default function App() {
+  return (
+    <div className="min-h-screen bg-[#0B1020] text-white font-sans">
+      <section className="max-w-7xl mx-auto px-6 py-28">
+        <h1 className="text-5xl md:text-7xl font-black">
+          FlashVolt <span className="text-yellow-400">Company</span>
+        </h1>
+
+        <p className="mt-8 text-xl text-gray-300 max-w-2xl">
+          Serviços elétricos modernos para casas, empresas e projetos técnicos.
+        </p>
+
+        <button className="mt-10 px-7 py-4 rounded-2xl bg-yellow-400 text-black font-bold">
+          Pedir Orçamento
+        </button>
+      </section>
+    </div>
+  );
+}
