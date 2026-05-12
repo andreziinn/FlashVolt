@@ -6,7 +6,7 @@ export default function App() {
       <section className="max-w-7xl mx-auto px-6 py-28">
         
         {/* Container flex para colocar o logo ao lado do texto */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap 0">
           <img
             src={logo}
             alt="FlashVolt Logo"
