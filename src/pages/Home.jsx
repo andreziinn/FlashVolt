@@ -17,10 +17,14 @@ export default function Home() {
       <p className="mt-8 text-xl text-gray-300 max-w-2xl">
         Serviços elétricos modernos para casas, empresas e projetos técnicos.
       </p>
-
-      <button className="mt-10 px-7 py-4 rounded-2xl bg-yellow-400 text-black font-bold hover:bg-yellow-500 transition-colors">
+<a 
+        href="https://wa.me/351962646265?text=Olá! Gostaria de pedir um orçamento para um serviço."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-10 px-7 py-4 rounded-2xl bg-yellow-400 text-black font-bold inline-block hover:bg-yellow-500 transition-colors"
+      >
         Pedir Orçamento
-      </button>
+      </a>
     </section>
   );
 }
