@@ -1,31 +1,21 @@
-import logo from './assets/logo.png'; 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Home from './pages/Home';
+import Servicos from './pages/Servicos';
+import Contactos from './pages/Contactos';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#0B1020] text-white font-sans">
-      <section className="max-w-7xl mx-auto px-6 py-28">
-        
-        {/* Container flex para colocar o logo ao lado do texto */}
-        <div className="flex items-center gap 0">
-          <img
-            src={logo}
-            alt="FlashVolt Logo"
-            className="w-24 h-24 object-contain"
-          />
-
-          <h1 className="text-5xl md:text-7xl font-black">
-            FlashVolt <span className="text-yellow-400">Company</span>
-          </h1>
-        </div>
-
-        <p className="mt-8 text-xl text-gray-300 max-w-2xl">
-          Serviços elétricos modernos para casas, empresas e projetos técnicos.
-        </p>
-
-        <button className="mt-10 px-7 py-4 rounded-2xl bg-yellow-400 text-black font-bold hover:bg-yellow-500 transition-colors">
-          Pedir Orçamento
-        </button>
-      </section>
-    </div>
+    <Router>
+      {/* O fundo escuro fica aqui para ser aplicado em TODO o site */}
+      <div className="min-h-screen bg-[#0B1020] text-white font-sans">
+        <Header /> 
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/servicos" element={<Servicos />} />
+          <Route path="/contactos" element={<Contactos />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
