@@ -10,7 +10,7 @@ export default function App() {
           <img
             src={logo}
             alt="FlashVolt Logo"
-            className="w-16 h-16 object-contain"
+            className="w-24 h-24 object-contain"
           />
 
           <h1 className="text-5xl md:text-7xl font-black">
