@@ -51,6 +51,10 @@ export default function Home() {
             <h3 className="text-white text-2xl font-bold mb-4">Certificação</h3>
             <p className="text-gray-400">Vistorias técnicas e emissão de certificados de segurança e eficiência elétrica.</p>
           </div>
+          <div className="bg-[#151b2d] p-8 rounded-3xl border border-gray-800">
+            <h3 className="text-white text-2xl font-bold mb-4">Web Design</h3>
+            <p className="text-gray-400">Criação e manutenção de websites para cliente ou intraempresa.</p>
+          </div>
         </div>
       </section>
 
